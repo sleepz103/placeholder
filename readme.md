@@ -12,3 +12,10 @@ Ziel der Anwendung ist es, Selbstdisziplin und Produktivität zu fördern, indem
 Das Konzept ist inspiriert von Habitica, wird jedoch eigenständig umgesetzt und speziell auf Programmier- und Entwickler-Habits ausgerichtet.
 
 Durch die Kombination aus Aufgabenmanagement, Belohnungssystem und Konsequenzen wird Produktivität zu einer motivierenden und interaktiven Erfahrung.
+
+
+
+## Arbeitspakete 27.02 Ivan (API)
+- [ ] Erstell funktion einfügen
+- [ ] Get funktion einfügen
+- [ ] Funktionen testen/ verknüpfen
