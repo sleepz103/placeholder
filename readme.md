@@ -17,7 +17,15 @@ Durch die Kombination aus Aufgabenmanagement, Belohnungssystem und Konsequenzen 
 
 Unsere Idee wird mit *React* umgesetzt. Wir sehen vor, Benutzer den Zugriff per Webseite zu erlauben. Spätrer, möchten wir sync anbieten und somit Benutzerdaten in der Cloud (Azure kommt als erste Kandidat) speichern. API wird möglicherweise mit eine Technologie benutzt, die wir kennen z.B. C#. Das hätte den Vorteil, das man es per VS hochladen kann. 
 
+## Target audience
+Unsere Nutzer sind Informatiker, die ihren Alltag mithilfe einer spielerischen ToDo App, welche an den Programmieralltag angepasst ist organisieren möchten.
+
 # Arbeitspaketen
+
+## Arbeitspakete 20.02 (Frontend)
+- [ ] Ich erstelle ein Formular, um eine ToDo hinzufügen zu können
+- [ ] Ich erstelle eine Funktion, um die ToDos in der DB zu speichern
+- [ ] Ich lasse alle ToDos auf dem Frontend anzeigen
 
 ## Arbeitspakete 27.02 Ivan (API)
 - [ ] Erstell funktion einfügen
