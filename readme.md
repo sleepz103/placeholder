@@ -33,7 +33,7 @@ Unsere Nutzer sind Informatiker, die ihren Alltag mithilfe einer spielerischen T
 - [ ] Funktionen testen/ verknüpfen
 
 ## Sleepz103 (DB)
-- [ ] Ein Task hat:
+- [x] Ein Task hat:
 name: required
 description: optional
 startdate: optional
@@ -42,5 +42,7 @@ category: required(?)
 difficulty: required(?) (je schwerer desto mehr geld / damage)
 status: required (wie in kanban, not done, in progress, done)
 timeDone: required (zählt wie viel mal etwas gemacht wurde)
-- [ ] DB befindet sich auf Azure
+- [x] DB befindet sich auf Azure
 - [ ] DB reagiert korrekt auf Anfragen (GET. POST)
+
+Zusammenfassung: Heute habe ich eine Ressource Gruppe, SQL Sever und SQL Datenbank namens placeholder in Azure erstellt. Danach habe ich mich mit SSMS verbunden und eine Tabelle für Tasks erstellt. 
