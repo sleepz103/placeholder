@@ -27,10 +27,20 @@ Unsere Nutzer sind Informatiker, die ihren Alltag mithilfe einer spielerischen T
 - [ ] Ich erstelle eine Funktion, um die ToDos in der DB zu speichern
 - [ ] Ich lasse alle ToDos auf dem Frontend anzeigen
 
-## Arbeitspakete 27.02 Ivan (API)
-- [ ] Erstell funktion einfügen
-- [ ] Get funktion einfügen
+## Arbeitspakete 27.02 IvanKos19 (API)
+- [X] Erstell funktion einfügen
+- [X] Get funktion einfügen
 - [ ] Funktionen testen/ verknüpfen
+
+## Zusammenfassung
+Am 27.02.2026 habe ich in der API die Create Funktion sowie die Get Funktion erfolgreich implementiert. Damit können neue Tasks erstellt und bestehende Tasks aus der Datenbank abgerufen werden. Die grundlegende Struktur der Endpoints funktioniert bereits, jedoch treten aktuell noch kleinere Fehler im Code auf, die ich beheben muss. Das Testen und vollständige Verknüpfen mit dem Frontend steht noch aus und wird in der nächsten Sitzung abgeschlossen. (Wörter: 71)
+
+## Arbeitspakete 6.03 IvanKos19 (API)
+- [ ] API mit der Datenbank verknüpfen (Dezentral)
+- [ ] Fehler beheben in der API
+- [ ] verknüpfung testen (Funktionen)
+- [ ] verknüpfung testen (Tabellen)
+
 
 ## Sleepz103 (DB)
 - [ ] Ein Task hat:
