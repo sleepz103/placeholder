@@ -56,3 +56,10 @@ timeDone: required (zählt wie viel mal etwas gemacht wurde)
 - [ ] DB reagiert korrekt auf Anfragen (GET. POST)
 
 Zusammenfassung: Heute habe ich eine Ressource Gruppe, SQL Sever und SQL Datenbank namens placeholder in Azure erstellt. Danach habe ich mich mit SSMS verbunden und eine Tabelle für Tasks erstellt. 
+
+
+## 06.03.2026
+- [ ] Wenn ein GET Anfrage ankommt, sollen alle tasks kommen
+- [ ] Wenn ein DELETE mit Id ankommt, soll dieser aus Datenbank geslöscht werden
+- [ ] Wenn ein POST ankommt soll ein neues Todo erstellt werden
+- [ ] Zusamenn bearbeiten wir das Prototyp auf Papier/Software herstellen
