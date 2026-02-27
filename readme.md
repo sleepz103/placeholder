@@ -22,10 +22,19 @@ Unsere Nutzer sind Informatiker, die ihren Alltag mithilfe einer spielerischen T
 
 # Arbeitspaketen
 
-## Arbeitspakete 20.02 (Frontend)
+## Arbeitspakete 27.02 RobiBlocks (Frontend)
 - [ ] Ich erstelle ein Formular, um eine ToDo hinzufügen zu können
 - [ ] Ich erstelle eine Funktion, um die ToDos in der DB zu speichern
 - [ ] Ich lasse alle ToDos auf dem Frontend anzeigen
+
+**Zusammenfassung:** Heute habe ich mich um das Frontend gekümmert. Ich habe einen Button erstellt mit dem man ein Formular öffnen kann, mit dem man alle Angaben zu einem ToDo eingeben kann, also Titel, Fälligkeitsdatum und Bearbeitungsdatum.
+
+## Arbeitspakete 13.03 RobiBlocks (Frontend)
+
+- [ ] Ich erstelle ein Mockup für das Frontend
+- [ ] Ich lade das Frontend auf Azure hoch
+- [ ] Ich erstelle drei Spalten für das Kanban
+- [ ] Ich füge provisorische ToDos hinzu und mache sie verschiebbar
 
 ## Arbeitspakete 27.02 IvanKos19 (API)
 - [X] Erstell funktion einfügen
