@@ -68,8 +68,10 @@ Zusammenfassung: Heute habe ich eine Ressource Gruppe, SQL Sever und SQL Datenba
 
 
 ## 06.03.2026
-- [ ] Wenn ein GET Anfrage ankommt, sollen alle tasks kommen
-- [ ] Wenn ein DELETE mit Id ankommt, soll dieser aus Datenbank geslöscht werden
-- [ ] Wenn ein POST ankommt soll ein neues Todo erstellt werden
+- [x] Wenn ein GET Anfrage ankommt, sollen alle tasks kommen -- nur geprüft, code dank Gabikan und Ivankos
+- [x] Wenn ein DELETE mit Id ankommt, soll dieser aus Datenbank geslöscht werden -- nur geprüft, code dank Gabikan und Ivankos
+- [x] Wenn ein POST ankommt soll ein neues Todo erstellt werden -- nur geprüft, code dank Gabikan und Ivankos
 - [x] Zusamenn bearbeiten wir das Prototyp auf Papier/Software herstellen
 
+- [ ] API auf Azure hochladen
+- [ ] Wenn ein push auf 'production' branch kommt, soll die neue Version von API hochgeladen werden
