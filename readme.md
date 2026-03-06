@@ -51,7 +51,7 @@ Am 27.02.2026 habe ich in der API die Create Funktion sowie die Get Funktion erf
 - [ ] verknüpfung testen (Tabellen)
 
 
-## Sleepz103 (DB)
+## Sleepz103 27.02
 - [x] Ein Task hat:
 name: required
 description: optional
@@ -67,11 +67,15 @@ timeDone: required (zählt wie viel mal etwas gemacht wurde)
 Zusammenfassung: Heute habe ich eine Ressource Gruppe, SQL Sever und SQL Datenbank namens placeholder in Azure erstellt. Danach habe ich mich mit SSMS verbunden und eine Tabelle für Tasks erstellt. 
 
 
-## 06.03.2026
+## Sleepz103 06.03
 - [x] Wenn ein GET Anfrage ankommt, sollen alle tasks kommen -- nur geprüft, code dank Gabikan und Ivankos
 - [x] Wenn ein DELETE mit Id ankommt, soll dieser aus Datenbank geslöscht werden -- nur geprüft, code dank Gabikan und Ivankos
 - [x] Wenn ein POST ankommt soll ein neues Todo erstellt werden -- nur geprüft, code dank Gabikan und Ivankos
 - [x] Zusamenn bearbeiten wir das Prototyp auf Papier/Software herstellen
+
+**Zusammenfassung**: Heute habe ich am Anfang Gabikan in das Projekt eingebracht und zusammen haben wir die Aufgaben aufgeteilt. Ich habe mit ConnectionString geholfen und dann bei mir das erhaltene Code geprüft. Dann während Debugging haben wir bemerkt, dass die DB-Tabelle fehlerhaft ist und muss korrigiert werden. Danach war die App vollständig. Gegen Ende habe ich meine Arbeitspaketen angepasst und Code für alle hochgeladen.
+
+## Sleepz103 20.03
 
 - [x] Code auf Github hochladen
 - [ ] API auf Azure hochladen
