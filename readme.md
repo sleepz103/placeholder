@@ -62,4 +62,5 @@ Zusammenfassung: Heute habe ich eine Ressource Gruppe, SQL Sever und SQL Datenba
 - [ ] Wenn ein GET Anfrage ankommt, sollen alle tasks kommen
 - [ ] Wenn ein DELETE mit Id ankommt, soll dieser aus Datenbank geslöscht werden
 - [ ] Wenn ein POST ankommt soll ein neues Todo erstellt werden
-- [ ] Zusamenn bearbeiten wir das Prototyp auf Papier/Software herstellen
+- [x] Zusamenn bearbeiten wir das Prototyp auf Papier/Software herstellen
+
