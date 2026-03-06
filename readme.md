@@ -73,5 +73,6 @@ Zusammenfassung: Heute habe ich eine Ressource Gruppe, SQL Sever und SQL Datenba
 - [x] Wenn ein POST ankommt soll ein neues Todo erstellt werden -- nur geprüft, code dank Gabikan und Ivankos
 - [x] Zusamenn bearbeiten wir das Prototyp auf Papier/Software herstellen
 
+- [x] Code auf Github hochladen
 - [ ] API auf Azure hochladen
 - [ ] Wenn ein push auf 'production' branch kommt, soll die neue Version von API hochgeladen werden
