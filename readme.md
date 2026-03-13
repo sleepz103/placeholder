@@ -1,5 +1,27 @@
 # Placeholder the habit (name to be changed)
 
+## Getting Started
+
+### Frontend (React + Vite)
+
+1. Navigate into the `frontend` folder:
+   ```bash
+   cd frontend
+   ```
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+3. Start the development server:
+   ```bash
+   npm start
+   ```
+   The app will be available at **http://localhost:5173** by default.
+
+> You can also use `npm run dev` — both commands do the same thing.
+
+---
+
 ## Projektbeschreibung
 
 Dieses Projekt ist eine gamifizierte Aufgabenverwaltungs-App, die auf einem Kanban-System basiert.
