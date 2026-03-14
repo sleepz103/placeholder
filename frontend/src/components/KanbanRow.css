@@ -1,0 +1,15 @@
+.kanbanTask {
+  padding: 10px;
+  margin: 20px;
+  border-radius: 4px;
+  background-color: #BFD7EA;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  color: #000000;
+}
+.kanbanRow {
+  width: 200px;
+  margin: 20px;
+  border-radius: 15px;
+  background-color: #0B3954;
+  color: #FFFFFF;
+}

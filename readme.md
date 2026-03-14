@@ -34,9 +34,11 @@ Unsere Nutzer sind Informatiker, die ihren Alltag mithilfe einer spielerischen T
 ## Arbeitspakete 13.03 RobiBlocks (Frontend)
 
 - [ ] Ich erstelle ein Mockup für das Frontend
-- [ ] Ich erstelle eine Funktion, um ein ToDo hinzuzufügen
-- [ ] Ich erstelle drei Spalten für das Kanban
-- [ ] Ich lasse die ToDos in den Spalten des Kanban anzeigen
+- [x] Ich erstelle eine Funktion, um ein ToDo hinzuzufügen
+- [x] Ich erstelle drei Spalten für das Kanban
+- [x] Ich lasse die ToDos in den Spalten des Kanban anzeigen
+
+**Zusammenfassung:** Heute habe ich zuerst das Frontend mit dem Backend verbunden, wozu ich den ConnectionString einfügen musste. Danach habe ich die AddToDo Funktion im Frontend erstellt, sodass man neue ToDos hinzufügen kann. Nach einer Pause habe ich einen Komponenten implementiert, um alle ToDos anzuzeigen. 
 
 ## Arbeitspakete 27.02 IvanKos19 (API)
 

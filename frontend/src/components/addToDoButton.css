@@ -1,6 +1,9 @@
 .addToDoButton {
+  position: absolute;
+  top: 20px;
+  right: 20px;
   padding: 8px 16px;
-  background-color: #2d8cff;
+  background-color: #087E8B;
   color: white;
   border: none;
   border-radius: 4px;
@@ -8,5 +11,5 @@
 }
 
 .addToDoButton:hover {
-  background-color: #1c6cd4;
+  background-color: #0B3954;
 }
