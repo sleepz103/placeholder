@@ -5,11 +5,38 @@
   background-color: #BFD7EA;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   color: #000000;
+
+  /* Drag & Drop */
+  cursor: grab;
+  transition: opacity 0.15s ease, transform 0.15s ease, box-shadow 0.15s ease;
+  user-select: none;
 }
+
+.kanbanTask:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transform: translateY(-1px);
+}
+
+.kanbanTask:active {
+  cursor: grabbing;
+  opacity: 0.6;
+  transform: scale(0.97);
+}
+
 .kanbanRow {
   width: 200px;
   margin: 20px;
   border-radius: 15px;
   background-color: #0B3954;
   color: #FFFFFF;
+
+  /* Drag & Drop */
+  transition: background-color 0.2s ease, outline 0.2s ease;
+}
+
+/* Visuelles Feedback wenn ein Task über die Spalte gezogen wird */
+.kanbanRow.drag-over {
+  background-color: #1a5c82;
+  outline: 2px dashed #BFD7EA;
+  outline-offset: -4px;
 }
