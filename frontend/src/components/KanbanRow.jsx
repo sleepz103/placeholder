@@ -1,8 +1,9 @@
 import { useState, useEffect } from "react";
 import "./KanbanRow.css";
 
-function KanbanRow({ title, status }) {
+function KanbanRow({ title, status, onDragStart, onDrop, refreshKey }) {
   const [tasks, setTasks] = useState([]);
+  const [isDragOver, setIsDragOver] = useState(false);
 
   const getTasks = async () => {
     try {
@@ -13,7 +14,7 @@ function KanbanRow({ title, status }) {
           headers: {
             "Content-Type": "application/json",
           },
-        },
+        }
       );
 
       if (!res.ok) {
@@ -36,14 +37,48 @@ function KanbanRow({ title, status }) {
 
   useEffect(() => {
     loadTasks();
-  }, [status]);
+  }, [status, refreshKey]);
+
+  const handleDragStart = (e, task) => {
+    const taskId = task.taskId ?? task.id;
+    onDragStart({ id: taskId, sourceStatus: status });
+    e.dataTransfer.effectAllowed = "move";
+  };
+
+  const handleDragOver = (e) => {
+    e.preventDefault();
+    e.dataTransfer.dropEffect = "move";
+    setIsDragOver(true);
+  };
+
+  const handleDragLeave = (e) => {
+    if (!e.currentTarget.contains(e.relatedTarget)) {
+      setIsDragOver(false);
+    }
+  };
+
+  const handleDrop = (e) => {
+    e.preventDefault();
+    setIsDragOver(false);
+    onDrop(status);
+  };
 
   return (
-    <div className="kanbanRow">
+    <div
+      className={`kanbanRow${isDragOver ? " drag-over" : ""}`}
+      onDragOver={handleDragOver}
+      onDragLeave={handleDragLeave}
+      onDrop={handleDrop}
+    >
       <h2>{title}</h2>
       <div className="kanbanTasks">
         {tasks.map((task) => (
-          <div key={task.id} className="kanbanTask">
+          <div
+            key={task.taskId ?? task.id}
+            className="kanbanTask"
+            draggable
+            onDragStart={(e) => handleDragStart(e, task)}
+          >
             <h3>{task.title}</h3>
             <p>{task.description}</p>
           </div>
