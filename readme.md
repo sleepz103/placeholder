@@ -92,3 +92,11 @@ Grund: Mir sind die Credits auf Azure ausgelaufen. Ausserdem kenne ich CD/CI auf
 - [x] Wenn ein Entwickler die API startet, soll kein Error 500 kommen.
 - [ ] Wenn ein Person die Webseite öffnet, sieht einen Button oben rechts.
 - [ ] Als Person die Personaliesierung bevorzug, möchte ich Theme button drücken um zwischen den Themes zu wechseln.
+
+
+
+Heute haben wir Hauptziele erreicht.
+Unser Hinderniss und unser MVP.
+Mit dotnet-secrets können wir connection bei uns lokal aufbauen, ohne Konflikte bei jeden Pull zu haben.
+Und nun können wir auch Tasks wie in Kanban verschieben.
+Wie am Anfang gesagt gibt es einen neuen Button für Farbenänderung. Es tut gerade keine Änderung, aber nächstes Mal wirds funktionieren.
