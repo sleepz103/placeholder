@@ -44,10 +44,15 @@ builder.Services.AddCors(options =>
 var app = builder.Build();
 
 // Auto-apply DB migrations on startup
-using (var scope = app.Services.CreateScope())
+try
 {
+    using var scope = app.Services.CreateScope();
     var db = scope.ServiceProvider.GetRequiredService<AppDbContext>();
     db.Database.Migrate();
+}
+catch (Exception ex)
+{
+    app.Logger.LogError(ex, "Database migration failed during startup. The API will continue running, but database operations may fail until the connection is fixed.");
 }
 
 app.UseSwagger();
