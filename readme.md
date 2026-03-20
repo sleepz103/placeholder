@@ -85,5 +85,10 @@ Zusammenfassung: Heute habe ich eine Ressource Gruppe, SQL Sever und SQL Datenba
 ## Sleepz103 20.03
 
 - [x] Code auf Github hochladen
-- [ ] API auf Azure hochladen
-- [ ] Wenn ein push auf 'production' branch kommt, soll die neue Version von API hochgeladen werden
+- [ ] ~~API auf Azure hochladen ~~
+- [ ] ~~Wenn ein push auf 'production' branch kommt, soll die neue Version von API hochgeladen werden~~
+Grund: Mir sind die Credits auf Azure ausgelaufen. Ausserdem kenne ich CD/CI auf Azure noch nicht. Lokal zu arbeiten und am Ende hochzuladen scheint die einfachere Variante.
+
+- [x] Wenn ein Entwickler die API startet, soll kein Error 500 kommen.
+- [ ] Wenn ein Person die Webseite öffnet, sieht einen Button oben rechts.
+- [ ] Als Person die Personaliesierung bevorzug, möchte ich Theme button drücken um zwischen den Themes zu wechseln.
