@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import "./KanbanRow.css";
 
-function KanbanRow({ title, status, onDragStart, onDrop, refreshKey }) {
+function KanbanRow({ title, status, onDragStart, onDrop, refreshKey, onTaskClick }) {
   const [tasks, setTasks] = useState([]);
   const [isDragOver, setIsDragOver] = useState(false);
 
@@ -78,6 +78,7 @@ function KanbanRow({ title, status, onDragStart, onDrop, refreshKey }) {
             className="kanbanTask"
             draggable
             onDragStart={(e) => handleDragStart(e, task)}
+            onClick={() => onTaskClick(task)}
           >
             <h3>{task.title}</h3>
             <p>{task.description}</p>

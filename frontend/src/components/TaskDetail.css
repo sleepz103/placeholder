@@ -1,0 +1,204 @@
+.detail-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.detail-modal {
+  background: #0B3954;
+  color: #fff;
+  border-radius: 12px;
+  padding: 32px;
+  width: 480px;
+  max-width: 90vw;
+  position: relative;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+}
+
+.detail-close {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 18px;
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+.detail-close:hover {
+  opacity: 1;
+}
+
+.detail-modal h2 {
+  margin: 0 0 24px 0;
+  font-size: 20px;
+}
+
+/* ── Leseansicht ── */
+.detail-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.detail-field {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.detail-label {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  opacity: 0.6;
+}
+
+.detail-value {
+  font-size: 15px;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 6px 10px;
+  border-radius: 6px;
+}
+
+.detail-description {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 4px;
+  margin-bottom: 20px;
+}
+
+.detail-description p {
+  margin: 0;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 10px;
+  border-radius: 6px;
+  line-height: 1.5;
+}
+
+.detail-btn-edit {
+  width: 100%;
+  padding: 10px;
+  background: #BFD7EA;
+  color: #0B3954;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 8px;
+  transition: opacity 0.15s;
+}
+
+.detail-btn-edit:hover {
+  opacity: 0.85;
+}
+
+/* ── Bearbeitungsansicht ── */
+.detail-edit-form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-bottom: 16px;
+}
+
+.detail-edit-field {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.detail-edit-field label {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  opacity: 0.6;
+}
+
+.detail-edit-field input,
+.detail-edit-field textarea,
+.detail-edit-field select {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 6px;
+  color: #fff;
+  padding: 8px 10px;
+  font-size: 14px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.detail-edit-field select option {
+  background: #0B3954;
+  color: #fff;
+}
+
+.detail-edit-field input:focus,
+.detail-edit-field textarea:focus,
+.detail-edit-field select:focus {
+  outline: none;
+  border-color: #BFD7EA;
+}
+
+.detail-edit-field textarea {
+  resize: vertical;
+}
+
+.detail-error {
+  color: #ff6b6b;
+  font-size: 13px;
+  margin: 0 0 12px 0;
+}
+
+.detail-btn-row {
+  display: flex;
+  gap: 10px;
+  margin-top: 4px;
+}
+
+.detail-btn-cancel {
+  flex: 1;
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: opacity 0.15s;
+}
+
+.detail-btn-cancel:hover {
+  opacity: 0.8;
+}
+
+.detail-btn-save {
+  flex: 2;
+  padding: 10px;
+  background: #BFD7EA;
+  color: #0B3954;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: opacity 0.15s;
+}
+
+.detail-btn-save:hover {
+  opacity: 0.85;
+}
+
+.detail-btn-save:disabled,
+.detail-btn-cancel:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
