@@ -104,7 +104,7 @@ Wie am Anfang gesagt gibt es einen neuen Button für Farbenänderung. Es tut ger
 # 27.03
 ## Sleepz103 27.03
 - [x] POST Anfrage vereinfachen: Wenn die eine Person ein neuen Task erstellen will, sind Bearbeitungsdatum, Fälligkeitsdatum und Startdatum schon vorbereitet, um schneller Task zu erstellen
-- [ ] POST Anfrage vereinfachen: In Task Erstellung, wenn ich die Kategorie bei drücke, kommt eine eine Liste mit Kategorien aus DB
+- [x] POST Anfrage vereinfachen: In Task Erstellung, wenn ich die Kategorie bei drücke, kommt eine eine Liste mit Kategorien aus DB
 - [ ]  Wenn ein Person die Webseite öffnet, sieht einen Button oben rechts.
 - [ ] Als Person die Personaliesierung bevorzug, möchte ich Theme button drücken um zwischen den Themes zu wechseln.
 

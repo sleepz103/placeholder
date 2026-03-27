@@ -1,8 +1,11 @@
 import "./addToDoForm.css";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 function AddToDoForm({ onClose, onAdded }) {
 
+  const [categories, setCategories] = useState([]);
+
+  // Pre-Assign today values when creating task
   useEffect(() => {
 
     const formatDate = (date) => {
@@ -25,6 +28,16 @@ function AddToDoForm({ onClose, onAdded }) {
       onClose();
     }
   };
+
+  // Fetch categories from DB for when creating task
+  useEffect(() => {
+  const fetchCategories = async () => {
+    const res = await fetch("http://localhost:58716/api/tasks/categories");
+    const data = await res.json();
+    setCategories(data.filter(c => c !== null));
+  };
+  fetchCategories();
+}, []);
 
   const stopPropagation = (e) => {
     e.stopPropagation();
@@ -98,7 +111,17 @@ function AddToDoForm({ onClose, onAdded }) {
         <input type="date" id="todoStartDate" />
 
         <label htmlFor="todoCategory">Kategorie:</label>
-        <input type="text" id="todoCategory" />
+        <input 
+          type="text" 
+          id="todoCategory" 
+          list="categoryList" 
+          autoComplete="off"
+        />
+        <datalist id="categoryList">
+        {categories.map((cat, index) => ( //Datalist with help and explanation by Gemini 3.1
+          <option key={index} value={cat} />
+        ))}
+        </datalist>
 
         <button type="submit" className="submitButton">
           Hinzufügen

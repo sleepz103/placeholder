@@ -29,6 +29,15 @@ public class TasksController : ControllerBase
         return await query.OrderByDescending(t => t.CreatedAt).ToListAsync();
     }
 
+    [HttpGet("categories")]
+    public async Task<ActionResult<List<string?>>> GetAllCategories([FromQuery] Models.TaskStatus? status)
+    {
+        var query = _context.Tasks.AsQueryable();
+        if (status.HasValue)
+            query = query.Where(t => t.Status == status.Value);
+        return await query.Select(t => t.Category).Distinct().ToListAsync();
+    }
+
     // GET /api/tasks/5
     [HttpGet("{id}")]
     public async Task<ActionResult<TaskItem>> GetById(int id)
