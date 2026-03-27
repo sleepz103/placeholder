@@ -63,7 +63,18 @@
 
 .detail-value {
   font-size: 15px;
-  background: rgba(255, 255, 255, 0.1);
+  background: #BFD7EA;
+  color: black;
+  font-weight: bold;
+  padding: 6px 10px;
+  border-radius: 6px;
+}
+
+.detail-value:hover {
+  font-size: 15px;
+  background: #087E8B;
+  color: black;
+  font-weight: bold;
   padding: 6px 10px;
   border-radius: 6px;
 }
@@ -87,8 +98,8 @@
 .detail-btn-edit {
   width: 100%;
   padding: 10px;
-  background: #BFD7EA;
-  color: #0B3954;
+  background: #FF5A5F;
+  color: #000000;
   border: none;
   border-radius: 8px;
   font-size: 15px;
@@ -99,7 +110,7 @@
 }
 
 .detail-btn-edit:hover {
-  opacity: 0.85;
+  background-color: #C81D25;
 }
 
 /* ── Bearbeitungsansicht ── */
@@ -167,34 +178,33 @@
 .detail-btn-cancel {
   flex: 1;
   padding: 10px;
-  background: rgba(255, 255, 255, 0.1);
+  background: #FF5A5F;
   color: #fff;
   border: none;
   border-radius: 8px;
   font-size: 15px;
   cursor: pointer;
-  transition: opacity 0.15s;
+  color: black;
 }
 
 .detail-btn-cancel:hover {
-  opacity: 0.8;
+  background: #C81D25;
 }
 
 .detail-btn-save {
   flex: 2;
   padding: 10px;
-  background: #BFD7EA;
-  color: #0B3954;
+  background: #FF5A5F;
+  color: black;
   border: none;
   border-radius: 8px;
   font-size: 15px;
-  font-weight: 600;
+  font-weight: bold;
   cursor: pointer;
-  transition: opacity 0.15s;
 }
 
 .detail-btn-save:hover {
-  opacity: 0.85;
+  background: #C81D25;
 }
 
 .detail-btn-save:disabled,

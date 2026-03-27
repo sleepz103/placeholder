@@ -23,8 +23,10 @@ body {
   flex-direction: column;
   align-items: flex-start;
   text-align: left;
+  color: white;
+  font-weight: bold;
 
-  background-color: #087E8B;
+  background-color: #0B3954;
   border-radius: 10px;
   padding: 40px;
   width: 500px;
@@ -34,4 +36,31 @@ body {
 .addToDoForm input{
   width: 100%;
   box-sizing: border-box;
+  margin-bottom: 16px;
+  padding: 8px;
+  border: none;
+  border-radius: 4px;
+  background-color: #BFD7EA;
+}
+
+.addToDoForm input:focus {
+  background-color: #087E8B;
+  color: white;
+}
+
+.submitButton {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #FF5A5F;
+  color: white;
+  font-size: 14px;
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.submitButton:hover {
+  background-color: #C81D25;
 }
