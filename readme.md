@@ -21,8 +21,7 @@ Unsere Idee wird mit *React* umgesetzt. Wir sehen vor, Benutzer den Zugriff per 
 
 Unsere Nutzer sind Informatiker, die ihren Alltag mithilfe einer spielerischen ToDo App, welche an den Programmieralltag angepasst ist organisieren möchten.
 
-# Arbeitspaketen
-
+# 27.02
 ## Arbeitspakete 27.02 RobiBlocks (Frontend)
 
 - [x] Ich erstelle ein Formular, um eine ToDo hinzufügen zu können
@@ -50,13 +49,6 @@ Unsere Nutzer sind Informatiker, die ihren Alltag mithilfe einer spielerischen T
 
 Am 27.02.2026 habe ich in der API die Create Funktion sowie die Get Funktion erfolgreich implementiert. Damit können neue Tasks erstellt und bestehende Tasks aus der Datenbank abgerufen werden. Die grundlegende Struktur der Endpoints funktioniert bereits, jedoch treten aktuell noch kleinere Fehler im Code auf, die ich beheben muss. Das Testen und vollständige Verknüpfen mit dem Frontend steht noch aus und wird in der nächsten Sitzung abgeschlossen. (Wörter: 71)
 
-## Arbeitspakete 6.03 IvanKos19 (API)
-
-- [ ] API mit der Datenbank verknüpfen (Dezentral)
-- [ ] Fehler beheben in der API
-- [ ] verknüpfung testen (Funktionen)
-- [ ] verknüpfung testen (Tabellen)
-
 ## Sleepz103 27.02
 
 - [x] Ein Task hat:
@@ -73,6 +65,15 @@ Am 27.02.2026 habe ich in der API die Create Funktion sowie die Get Funktion erf
 
 Zusammenfassung: Heute habe ich eine Ressource Gruppe, SQL Sever und SQL Datenbank namens placeholder in Azure erstellt. Danach habe ich mich mit SSMS verbunden und eine Tabelle für Tasks erstellt. 
 
+# 06.03
+
+## Arbeitspakete 6.03 IvanKos19 (API)
+
+- [ ] API mit der Datenbank verknüpfen (Dezentral)
+- [ ] Fehler beheben in der API
+- [ ] verknüpfung testen (Funktionen)
+- [ ] verknüpfung testen (Tabellen)
+
 ## Sleepz103 06.03
 
 - [x] Wenn ein GET Anfrage ankommt, sollen alle tasks kommen -- nur geprüft, code dank Gabikan und Ivankos
@@ -82,6 +83,7 @@ Zusammenfassung: Heute habe ich eine Ressource Gruppe, SQL Sever und SQL Datenba
 
 **Zusammenfassung**: Heute habe ich am Anfang Gabikan in das Projekt eingebracht und zusammen haben wir die Aufgaben aufgeteilt. Ich habe mit ConnectionString geholfen und dann bei mir das erhaltene Code geprüft. Dann während Debugging haben wir bemerkt, dass die DB-Tabelle fehlerhaft ist und muss korrigiert werden. Danach war die App vollständig. Gegen Ende habe ich meine Arbeitspaketen angepasst und Code für alle hochgeladen.
 
+# 20.03 
 ## Sleepz103 20.03
 
 - [x] Code auf Github hochladen
@@ -93,10 +95,17 @@ Grund: Mir sind die Credits auf Azure ausgelaufen. Ausserdem kenne ich CD/CI auf
 - [ ] Wenn ein Person die Webseite öffnet, sieht einen Button oben rechts.
 - [ ] Als Person die Personaliesierung bevorzug, möchte ich Theme button drücken um zwischen den Themes zu wechseln.
 
-
-
 Heute haben wir Hauptziele erreicht.
-Unser Hinderniss und unser MVP.
+Unser Hinderniss behoben und unser MVP entwickelt.
 Mit dotnet-secrets können wir connection bei uns lokal aufbauen, ohne Konflikte bei jeden Pull zu haben.
 Und nun können wir auch Tasks wie in Kanban verschieben.
 Wie am Anfang gesagt gibt es einen neuen Button für Farbenänderung. Es tut gerade keine Änderung, aber nächstes Mal wirds funktionieren.
+
+# 27.03
+## Sleepz103 27.03
+- [x] POST Anfrage vereinfachen: Wenn die eine Person ein neuen Task erstellen will, sind Bearbeitungsdatum, Fälligkeitsdatum und Startdatum schon vorbereitet, um schneller Task zu erstellen
+- [ ] POST Anfrage vereinfachen: In Task Erstellung, wenn ich die Kategorie bei drücke, kommt eine eine Liste mit Kategorien aus DB
+- [ ]  Wenn ein Person die Webseite öffnet, sieht einen Button oben rechts.
+- [ ] Als Person die Personaliesierung bevorzug, möchte ich Theme button drücken um zwischen den Themes zu wechseln.
+
+Issue: Given all valid data is set in AddToDoForm, when user presses "Hinzufügen", website does not refresh and doesn't display created task.

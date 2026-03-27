@@ -1,6 +1,25 @@
 import "./addToDoForm.css";
+import { useEffect } from "react";
 
 function AddToDoForm({ onClose }) {
+
+  useEffect(() => {
+
+    const formatDate = (date) => {
+      const year = date.getFullYear();
+      const month = String(date.getMonth() + 1).padStart(2, '0');
+      const day = String(date.getDate()).padStart(2, '0');
+      return `${year}-${month}-${day}`;
+    };
+
+    const todayFormatted = formatDate(new Date());
+
+    document.getElementById("todoCompletionDate").value = todayFormatted;
+    document.getElementById("todoDueDate").value = todayFormatted;
+    document.getElementById("todoStartDate").value = todayFormatted;
+    }, []);// The empty array [] means "run this only once on load"
+
+
   const handleOverlayClick = () => {
     if (onClose) {
       onClose();
