@@ -3,6 +3,7 @@ import "./App.css";
 import AddToDoForm from "./components/addToDoForm";
 import AddToDoButton from "./components/addToDoButton";
 import KanbanRow from "./components/KanbanRow";
+import TaskDetail from "./components/TaskDetail";
 
 const API_BASE = "http://localhost:58716/api";
 
@@ -10,6 +11,7 @@ function App() {
   const [showForm, setShowForm] = useState(false);
   const [draggedTask, setDraggedTask] = useState(null);
   const [refreshKey, setRefreshKey] = useState(0);
+  const [selectedTask, setSelectedTask] = useState(null);
 
   const handleClick = () => {
     setShowForm((prev) => !prev);
@@ -51,6 +53,14 @@ function App() {
     <>
       <AddToDoButton onClick={handleClick} />
       {showForm && <AddToDoForm onClose={() => setShowForm(false)} />}
+
+      {selectedTask && (
+        <TaskDetail
+          task={selectedTask}
+          onClose={() => setSelectedTask(null)}
+        />
+      )}
+
       <div id="KanbanBoard">
         <KanbanRow
           title="Backlog"
@@ -58,6 +68,7 @@ function App() {
           onDragStart={handleDragStart}
           onDrop={handleDrop}
           refreshKey={refreshKey}
+          onTaskClick={setSelectedTask}
         />
         <KanbanRow
           title="In Progress"
@@ -65,6 +76,7 @@ function App() {
           onDragStart={handleDragStart}
           onDrop={handleDrop}
           refreshKey={refreshKey}
+          onTaskClick={setSelectedTask}
         />
         <KanbanRow
           title="Review"
@@ -72,6 +84,7 @@ function App() {
           onDragStart={handleDragStart}
           onDrop={handleDrop}
           refreshKey={refreshKey}
+          onTaskClick={setSelectedTask}
         />
         <KanbanRow
           title="Done"
@@ -79,6 +92,7 @@ function App() {
           onDragStart={handleDragStart}
           onDrop={handleDrop}
           refreshKey={refreshKey}
+          onTaskClick={setSelectedTask}
         />
       </div>
     </>
