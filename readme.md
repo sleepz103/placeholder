@@ -128,3 +128,20 @@ Issue: Given all valid data is set in AddToDoForm, when user presses "Hinzufüge
 
 - [x] Wenn man ein ToDo hinzufügt, soll die Seite neugeladen werden, ohne dass man manuell auf "Refresh" klicken muss.
 - [ ] Das Design und CSS soll überall übereinstimmen. Bei AddToDo und bei EditToDo sollen ausserdem die selben Farben verwendet werden.
+
+
+ich habe heute kategorie dropdown implementiert und autofill dates in new task
+auto refresh
+faarben angepasst, sodass sie überall zusammenpassen
+detailansicht + editierung
+
+# 24.04
+
+## Sleepz103
+Wahrscheinlich 1 Arbeitspaket:
+- [ ] Wenn ein Person die Webseite öffnet, sieht einen Button oben rechts.
+- [ ] Als Person die Personaliesierung bevorzug, möchte ich Theme button drücken um zwischen den Themes zu wechseln.
+
+Also hier noch zweites:
+- [ ] Die app kann lokal aufgerufen werden: Wenn ich per Windows search die App wähle, startet in browser neuer Tab mit geladenen Tasks
+  - [ ] API Service soll lokal laufen schon am start und front end wie app aufrufbar sein  
