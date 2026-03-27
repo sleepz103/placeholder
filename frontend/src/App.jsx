@@ -58,6 +58,10 @@ function App() {
         <TaskDetail
           task={selectedTask}
           onClose={() => setSelectedTask(null)}
+          onSaved={() => {
+            setSelectedTask(null);
+            setRefreshKey((k) => k + 1);
+          }}
         />
       )}
 
