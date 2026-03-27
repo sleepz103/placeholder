@@ -1,6 +1,5 @@
 USE [placeholder];
 GO
-DROP TABLE [dbo].[Task];
 
 CREATE TABLE [dbo].[Task] (
     [TaskId] INT IDENTITY(1,1) NOT NULL PRIMARY KEY,

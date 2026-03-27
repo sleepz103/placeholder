@@ -15,6 +15,10 @@ function App() {
     setShowForm((prev) => !prev);
   };
 
+  const handleTaskAdded = () => {
+    setRefreshKey((k) => k + 1);
+  };
+
   const handleDragStart = useCallback((task) => {
     setDraggedTask(task);
   }, []);
@@ -44,13 +48,18 @@ function App() {
         setDraggedTask(null);
       }
     },
-    [draggedTask]
+    [draggedTask],
   );
 
   return (
     <>
       <AddToDoButton onClick={handleClick} />
-      {showForm && <AddToDoForm onClose={() => setShowForm(false)} />}
+      {showForm && (
+        <AddToDoForm
+          onClose={() => setShowForm(false)}
+          onAdded={handleTaskAdded}
+        />
+      )}
       <div id="KanbanBoard">
         <KanbanRow
           title="Backlog"

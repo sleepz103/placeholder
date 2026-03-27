@@ -1,7 +1,7 @@
 import "./addToDoForm.css";
 import { useEffect } from "react";
 
-function AddToDoForm({ onClose }) {
+function AddToDoForm({ onClose, onAdded }) {
 
   useEffect(() => {
 
@@ -66,6 +66,7 @@ function AddToDoForm({ onClose }) {
       }
       const newTodo = await response.json();
       console.log("Neues Todo erstellt:", newTodo);
+      onAdded?.();
       onClose?.();
     } catch (err) {
       console.error("addToDoItem fehlgeschlagen:", err);
