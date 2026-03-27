@@ -22,6 +22,7 @@ Unsere Idee wird mit *React* umgesetzt. Wir sehen vor, Benutzer den Zugriff per 
 Unsere Nutzer sind Informatiker, die ihren Alltag mithilfe einer spielerischen ToDo App, welche an den Programmieralltag angepasst ist organisieren möchten.
 
 # 27.02
+
 ## Arbeitspakete 27.02 RobiBlocks (Frontend)
 
 - [x] Ich erstelle ein Formular, um eine ToDo hinzufügen zu können
@@ -29,15 +30,6 @@ Unsere Nutzer sind Informatiker, die ihren Alltag mithilfe einer spielerischen T
 - [ ] Ich lasse alle ToDos auf dem Frontend anzeigen
 
 **Zusammenfassung:** Heute habe ich mich um das Frontend gekümmert. Ich habe einen Button erstellt mit dem man ein Formular öffnen kann, mit dem man alle Angaben zu einem ToDo eingeben kann, also Titel, Fälligkeitsdatum und Bearbeitungsdatum.
-
-## Arbeitspakete 13.03 RobiBlocks (Frontend)
-
-- [ ] Ich erstelle ein Mockup für das Frontend
-- [x] Ich erstelle eine Funktion, um ein ToDo hinzuzufügen
-- [x] Ich erstelle drei Spalten für das Kanban
-- [x] Ich lasse die ToDos in den Spalten des Kanban anzeigen
-
-**Zusammenfassung:** Heute habe ich zuerst das Frontend mit dem Backend verbunden, wozu ich den ConnectionString einfügen musste. Danach habe ich die AddToDo Funktion im Frontend erstellt, sodass man neue ToDos hinzufügen kann. Nach einer Pause habe ich einen Komponenten implementiert, um alle ToDos anzuzeigen. 
 
 ## Arbeitspakete 27.02 IvanKos19 (API)
 
@@ -67,14 +59,14 @@ Zusammenfassung: Heute habe ich eine Ressource Gruppe, SQL Sever und SQL Datenba
 
 # 06.03
 
-## Arbeitspakete 6.03 IvanKos19 (API)
+## IvanKos19 (API)
 
 - [ ] API mit der Datenbank verknüpfen (Dezentral)
 - [ ] Fehler beheben in der API
 - [ ] verknüpfung testen (Funktionen)
 - [ ] verknüpfung testen (Tabellen)
 
-## Sleepz103 06.03
+## Sleepz103
 
 - [x] Wenn ein GET Anfrage ankommt, sollen alle tasks kommen -- nur geprüft, code dank Gabikan und Ivankos
 - [x] Wenn ein DELETE mit Id ankommt, soll dieser aus Datenbank geslöscht werden -- nur geprüft, code dank Gabikan und Ivankos
@@ -83,16 +75,32 @@ Zusammenfassung: Heute habe ich eine Ressource Gruppe, SQL Sever und SQL Datenba
 
 **Zusammenfassung**: Heute habe ich am Anfang Gabikan in das Projekt eingebracht und zusammen haben wir die Aufgaben aufgeteilt. Ich habe mit ConnectionString geholfen und dann bei mir das erhaltene Code geprüft. Dann während Debugging haben wir bemerkt, dass die DB-Tabelle fehlerhaft ist und muss korrigiert werden. Danach war die App vollständig. Gegen Ende habe ich meine Arbeitspaketen angepasst und Code für alle hochgeladen.
 
-# 20.03 
-## Sleepz103 20.03
+# 13.03
+
+## RobiBlocks
+
+- [ ] Ich erstelle ein Mockup für das Frontend
+- [x] Ich erstelle eine Funktion, um ein ToDo hinzuzufügen
+- [x] Ich erstelle drei Spalten für das Kanban
+- [x] Ich lasse die ToDos in den Spalten des Kanban anzeigen
+
+**Zusammenfassung:** Heute habe ich zuerst das Frontend mit dem Backend verbunden, wozu ich den ConnectionString einfügen musste. Danach habe ich die AddToDo Funktion im Frontend erstellt, sodass man neue ToDos hinzufügen kann. Nach einer Pause habe ich einen Komponenten implementiert, um alle ToDos anzuzeigen. 
+
+# 20.03
+
+## Sleepz103
 
 - [x] Code auf Github hochladen
+
 - [ ] ~~API auf Azure hochladen ~~
+
 - [ ] ~~Wenn ein push auf 'production' branch kommt, soll die neue Version von API hochgeladen werden~~
-Grund: Mir sind die Credits auf Azure ausgelaufen. Ausserdem kenne ich CD/CI auf Azure noch nicht. Lokal zu arbeiten und am Ende hochzuladen scheint die einfachere Variante.
+  Grund: Mir sind die Credits auf Azure ausgelaufen. Ausserdem kenne ich CD/CI auf Azure noch nicht. Lokal zu arbeiten und am Ende hochzuladen scheint die einfachere Variante.
 
 - [x] Wenn ein Entwickler die API startet, soll kein Error 500 kommen.
+
 - [ ] Wenn ein Person die Webseite öffnet, sieht einen Button oben rechts.
+
 - [ ] Als Person die Personaliesierung bevorzug, möchte ich Theme button drücken um zwischen den Themes zu wechseln.
 
 Heute haben wir Hauptziele erreicht.
@@ -101,11 +109,22 @@ Mit dotnet-secrets können wir connection bei uns lokal aufbauen, ohne Konflikte
 Und nun können wir auch Tasks wie in Kanban verschieben.
 Wie am Anfang gesagt gibt es einen neuen Button für Farbenänderung. Es tut gerade keine Änderung, aber nächstes Mal wirds funktionieren.
 
+## RobiBlocks
+
+krank
+
 # 27.03
-## Sleepz103 27.03
+
+## Sleepz103
+
 - [x] POST Anfrage vereinfachen: Wenn die eine Person ein neuen Task erstellen will, sind Bearbeitungsdatum, Fälligkeitsdatum und Startdatum schon vorbereitet, um schneller Task zu erstellen
 - [ ] POST Anfrage vereinfachen: In Task Erstellung, wenn ich die Kategorie bei drücke, kommt eine eine Liste mit Kategorien aus DB
-- [ ]  Wenn ein Person die Webseite öffnet, sieht einen Button oben rechts.
+- [ ] Wenn ein Person die Webseite öffnet, sieht einen Button oben rechts.
 - [ ] Als Person die Personaliesierung bevorzug, möchte ich Theme button drücken um zwischen den Themes zu wechseln.
 
 Issue: Given all valid data is set in AddToDoForm, when user presses "Hinzufügen", website does not refresh and doesn't display created task.
+
+## RobiBlocks
+
+- [x] Wenn man ein ToDo hinzufügt, soll die Seite neugeladen werden, ohne dass man manuell auf "Refresh" klicken muss.
+- [ ] Das Design und CSS soll überall übereinstimmen. Bei AddToDo und bei EditToDo sollen ausserdem die selben Farben verwendet werden.
