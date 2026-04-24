@@ -1,11 +1,11 @@
-import "./changeThemeButton.css";
+import "./ChangeThemeButton.css";
 
-function changeThemeButton({ onClick }) {
+function ChangeThemeButton({ onClick }) {
   return (
-    <button className="changeThemeButton" onClick={onClick}>
+    <button className="ChangeThemeButton" onClick={onClick}>
       Change Theme
     </button>
   );
 }
 
-export default changeThemeButton;
+export default ChangeThemeButton;

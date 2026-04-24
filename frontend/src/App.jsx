@@ -3,6 +3,7 @@ import "./App.css";
 import AddToDoForm from "./components/addToDoForm";
 import AddToDoButton from "./components/addToDoButton";
 import KanbanRow from "./components/KanbanRow";
+import ChangeThemeButton from "./components/ChangeThemeButton";
 
 const API_BASE = "http://localhost:58716/api";
 
@@ -51,6 +52,7 @@ function App() {
     <>
       <AddToDoButton onClick={handleClick} />
       {showForm && <AddToDoForm onClose={() => setShowForm(false)} />}
+      <ChangeThemeButton/>
       <div id="KanbanBoard">
         <KanbanRow
           title="Backlog"
