@@ -139,8 +139,8 @@ detailansicht + editierung
 
 ## Sleepz103
 Wahrscheinlich 1 Arbeitspaket:
-- [ ] Wenn ein Person die Webseite öffnet, sieht einen Button oben rechts.
-- [ ] Als Person die Personaliesierung bevorzug, möchte ich Theme button drücken um zwischen den Themes zu wechseln.
+- [x] Wenn ein Person die Webseite öffnet, sieht einen Button oben rechts.
+- [x] Als Person die Personaliesierung bevorzug, möchte ich Theme button drücken um zwischen den Themes zu wechseln.
 
 Also hier noch zweites:
 - [ ] Die app kann lokal aufgerufen werden: Wenn ich per Windows search die App wähle, startet in browser neuer Tab mit geladenen Tasks
