@@ -1,5 +1,5 @@
 body {
-  color: black;
+  color: var(--color-text-primary);
 }
 
 .addToDo {
@@ -14,7 +14,7 @@ body {
   justify-content: center;
   align-items: center;
 
-  background: rgba(0,0,0,0.4);
+  background: var(--color-overlay);
   z-index: 1000;
 }
 
@@ -26,7 +26,8 @@ body {
   color: white;
   font-weight: bold;
 
-  background-color: #0B3954;
+  background-color: var(--color-bg-board);
+  color: var(--color-text-inverse);
   border-radius: 10px;
   padding: 40px;
   width: 500px;

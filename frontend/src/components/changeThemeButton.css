@@ -1,16 +1,15 @@
-.addToDoButton {
+.ChangeThemeButton {
   position: fixed;
   top: 20px;
-  right: 20px;
+  right: 140px;
   padding: 8px 16px;
   background-color: var(--color-button-bg);
   color: var(--color-text-inverse);
   border: none;
-  border-radius: 8px;
+  border-radius: 4px;
   cursor: pointer;
-
 }
 
-.addToDoButton:hover {
+.ChangeThemeButton:hover {
   background-color: var(--color-button-bg-hover);
 }

@@ -1,24 +1,42 @@
-import { useState, useCallback } from "react";
+import { useState, useCallback, useEffect } from "react";
 import "./App.css";
 import AddToDoForm from "./components/addToDoForm";
 import AddToDoButton from "./components/addToDoButton";
 import KanbanRow from "./components/KanbanRow";
 import TaskDetail from "./components/TaskDetail";
+import ChangeThemeButton from "./components/ChangeThemeButton";
 
 const API_BASE = "http://localhost:58716/api";
+const THEME_ORDER = ["light", "dark", "duotone", "vibrant"];
 
 function App() {
   const [showForm, setShowForm] = useState(false);
   const [draggedTask, setDraggedTask] = useState(null);
   const [refreshKey, setRefreshKey] = useState(0);
   const [selectedTask, setSelectedTask] = useState(null);
+  const [currentTheme, setCurrentTheme] = useState(() => {
+    const savedTheme = localStorage.getItem("theme");
+    return THEME_ORDER.includes(savedTheme) ? savedTheme : "light";
+  });
+
+  useEffect(() => {
+    document.documentElement.setAttribute("data-theme", currentTheme);
+    localStorage.setItem("theme", currentTheme);
+  }, [currentTheme]);
 
   const handleClick = () => {
     setShowForm((prev) => !prev);
   };
 
   const handleTaskAdded = () => {
-    setRefreshKey((k) => k + 1);
+    setRefreshKey((k) => k + 1)};
+  
+  const handleThemeToggle = () => {
+    setCurrentTheme((prev) => {
+      const currentIndex = THEME_ORDER.indexOf(prev);
+      const nextIndex = (currentIndex + 1) % THEME_ORDER.length;
+      return THEME_ORDER[nextIndex];
+    });
   };
 
   const handleDragStart = useCallback((task) => {
@@ -74,6 +92,8 @@ function App() {
         />
       )}
 
+      {showForm && <AddToDoForm onClose={() => setShowForm(false)} />}
+      <ChangeThemeButton onClick={handleThemeToggle} />
       <div id="KanbanBoard">
         <KanbanRow
           title="Backlog"
