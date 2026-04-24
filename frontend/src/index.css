@@ -3,6 +3,7 @@
   line-height: 1.5;
   font-weight: 400;
 
+  --color-text: white;
   --color-bg-page: #bfd7ea;
   --color-bg-board: #087e8b;
   --color-bg-column: #0b3954;
