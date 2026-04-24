@@ -91,8 +91,7 @@ function App() {
           }}
         />
       )}
-
-      {showForm && <AddToDoForm onClose={() => setShowForm(false)} />}
+      
       <ChangeThemeButton onClick={handleThemeToggle} />
       <div id="KanbanBoard">
         <KanbanRow
