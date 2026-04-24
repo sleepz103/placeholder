@@ -1,4 +1,5 @@
 .addToDoButton {
+  font-size: 14px;
   position: fixed;
   top: 20px;
   right: 20px;
@@ -8,7 +9,6 @@
   border: none;
   border-radius: 8px;
   cursor: pointer;
-
 }
 
 .addToDoButton:hover {

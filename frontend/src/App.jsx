@@ -5,6 +5,7 @@ import AddToDoButton from "./components/addToDoButton";
 import KanbanRow from "./components/KanbanRow";
 import TaskDetail from "./components/TaskDetail";
 import ChangeThemeButton from "./components/ChangeThemeButton";
+import PointsCount from "./components/PointsCount";
 
 const API_BASE = "http://localhost:58716/api";
 const THEME_ORDER = ["light", "dark", "duotone", "vibrant"];
@@ -73,6 +74,7 @@ function App() {
 
   return (
     <>
+      <PointsCount />
       <AddToDoButton onClick={handleClick} />
       {showForm && (
         <AddToDoForm
@@ -91,7 +93,7 @@ function App() {
           }}
         />
       )}
-      
+
       <ChangeThemeButton onClick={handleThemeToggle} />
       <div id="KanbanBoard">
         <KanbanRow
