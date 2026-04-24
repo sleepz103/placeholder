@@ -1,11 +1,9 @@
 import "./ChangeThemeButton.css";
 
-function ChangeThemeButton({ onClick, currentTheme }) {
-  const nextThemeLabel = currentTheme === "dark" ? "Light" : "Dark";
-
+function ChangeThemeButton({ onClick }) {
   return (
     <button className="ChangeThemeButton" onClick={onClick}>
-      {nextThemeLabel} Theme
+      Change theme
     </button>
   );
 }

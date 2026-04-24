@@ -29,6 +29,32 @@
   --color-drag-outline: #7ea8c7;
 }
 
+[data-theme="duotone"] {
+  --color-bg-page: #f4a261;
+  --color-bg-board: #e68637;
+  --color-bg-column: #cf330c;
+  --color-bg-column-drag: #e76f51;
+  --color-bg-task: #e9c46a;
+  --color-text-primary: #22130a;
+  --color-text-inverse: #fff9f3;
+  --color-button-bg: #cf330c;
+  --color-button-bg-hover: #e76f51;
+  --color-drag-outline: #f4a261;
+}
+
+[data-theme="vibrant"] {
+  --color-bg-page: #efd9ce;
+  --color-bg-board: #dec0f1;
+  --color-bg-column: #957fef;
+  --color-bg-column-drag: #7161ef;
+  --color-bg-task: #b79ced;
+  --color-text-primary: #251a49;
+  --color-text-inverse: #fdfcff;
+  --color-button-bg: #7161ef;
+  --color-button-bg-hover: #957fef;
+  --color-drag-outline: #dec0f1;
+}
+
 body {
   color: var(--color-text-primary);
 }

@@ -6,6 +6,7 @@ import KanbanRow from "./components/KanbanRow";
 import ChangeThemeButton from "./components/ChangeThemeButton";
 
 const API_BASE = "http://localhost:58716/api";
+const THEME_ORDER = ["light", "dark", "duotone", "vibrant"];
 
 function App() {
   const [showForm, setShowForm] = useState(false);
@@ -13,7 +14,7 @@ function App() {
   const [refreshKey, setRefreshKey] = useState(0);
   const [currentTheme, setCurrentTheme] = useState(() => {
     const savedTheme = localStorage.getItem("theme");
-    return savedTheme === "dark" ? "dark" : "light";
+    return THEME_ORDER.includes(savedTheme) ? savedTheme : "light";
   });
 
   useEffect(() => {
@@ -26,7 +27,11 @@ function App() {
   };
 
   const handleThemeToggle = () => {
-    setCurrentTheme((prev) => (prev === "light" ? "dark" : "light"));
+    setCurrentTheme((prev) => {
+      const currentIndex = THEME_ORDER.indexOf(prev);
+      const nextIndex = (currentIndex + 1) % THEME_ORDER.length;
+      return THEME_ORDER[nextIndex];
+    });
   };
 
   const handleDragStart = useCallback((task) => {
@@ -65,7 +70,7 @@ function App() {
     <>
       <AddToDoButton onClick={handleClick} />
       {showForm && <AddToDoForm onClose={() => setShowForm(false)} />}
-      <ChangeThemeButton onClick={handleThemeToggle} currentTheme={currentTheme} />
+      <ChangeThemeButton onClick={handleThemeToggle} />
       <div id="KanbanBoard">
         <KanbanRow
           title="Backlog"
