@@ -2,9 +2,9 @@
   padding: 10px;
   margin: 20px;
   border-radius: 4px;
-  background-color: #BFD7EA;
+  background-color: var(--color-bg-task);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  color: #000000;
+  color: var(--color-text-primary);
 
   /* Drag & Drop */
   cursor: grab;
@@ -27,8 +27,8 @@
   width: 200px;
   margin: 20px;
   border-radius: 15px;
-  background-color: #0B3954;
-  color: #FFFFFF;
+  background-color: var(--color-bg-column);
+  color: var(--color-text-inverse);
 
   /* Drag & Drop */
   transition: background-color 0.2s ease, outline 0.2s ease;
@@ -36,7 +36,7 @@
 
 /* Visuelles Feedback wenn ein Task über die Spalte gezogen wird */
 .kanbanRow.drag-over {
-  background-color: #1a5c82;
-  outline: 2px dashed #BFD7EA;
+  background-color: var(--color-bg-column-drag);
+  outline: 2px dashed var(--color-drag-outline);
   outline-offset: -4px;
 }
